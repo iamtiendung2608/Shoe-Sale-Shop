@@ -16,9 +16,6 @@
   <li>Spring Boot DEV tools</li>
   <li>Lombok</li>
 </ul>
-<ul>
-<li></li>
-</ul>
 <div>
 <strong>Description about this web: </strong>
 This web using SpringBoot framework to build a web server for selling shoe, using formall register page, format image and document using BootStrap,
