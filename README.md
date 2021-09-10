@@ -32,10 +32,11 @@ Main running of the web, run on the Tomcat Server
 <div>
 <strong>About Database:</strong>
 Using internal Database Jpa, local on Web H2 Database, managed by JPA Repository
+  and information about shoe is in text file
 </div>
 <div>
 <strong>About Controller</strong>
 Component contact by RestAPI
 </div>
-<strong>Web Host:</strong>
-<a href="localhost:8080/"></a>
+<strong>Web Host: Localhost</strong>
+
