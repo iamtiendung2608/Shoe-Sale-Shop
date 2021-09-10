@@ -1,0 +1,9 @@
+250 25 America
+220 37 Germany
+300 40 Portugal
+240 35 Holland
+270 10 America
+100 23 UK
+500 12 UK
+200 23 US
+300 10 UK

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Shopee</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+div{
+ 		text-align: center;
+        font-size: 20px;
+}
+body{
+	background-color:#FFEBDA;
+}
+.center {
+	display: block;
+	margin-left: 123px;
+	margin-right: auto;
+	margin-top: 20px;
+         }
+</style>
+
+</head>
+<body>
+	<img class="center" th:src="@{/images/freeship.jpg}">
+	<img th:src="@{/images/sieushop.jpg}" class="center">
+	<div class="row" style="margin-top: 20px; margin-left: 10px;">
+		<div style="margin-bottom: 2rem;" class="col-md-6" th:each="product : ${Items}">
+			<img style="border-radius: 15px;" th:src="@{${'/images/'+product.Source+'.jpg'}}">
+			<h2 th:text="${product.Description}"></h2>
+			<a th:href="@{/details/{id}(id=${product.Details})}">Click here</a>
+		</div>
+	</div>
+</body>
+</html>

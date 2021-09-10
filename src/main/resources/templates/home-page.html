@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Success</title>
+</head>
+<style>
+    img{
+        position: absolute;
+        left: 440px;
+        width: 480px;
+        height: 350px;
+    }
+    h1{
+        font-size: 50px;
+        text-align: center;
+        background-color: blue;
+        border-radius: 15px;
+        padding: 40px;
+    }
+    button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border: 2px solid green;
+    background: rgb(240, 240, 127);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 150px;
+    top: 550px;
+    left:420px;
+}
+button:hover{
+    background: rgb(247, 138, 104);
+}
+</style>
+<body>
+	<h1>Register success</h1>
+    <img th:src="@{/images/correct.png}" >
+	 <form action="/shop" method="post" >
+       <button>Start Shopping</button>
+	 </form>
+</body>
+</html>
